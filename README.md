@@ -33,6 +33,12 @@ There are several ways of preparing your Docker environment to suit your specifi
     
 Check your environment variables and make note of the IP assigned to your docker-machine.
 
+To simplify setting the default host and getting the ip an alias in your shell may be used such as: 
+
+    $ alias dmd='eval "$(docker-machine env default)";echo $DOCKER_HOST'
+    
+
+
 ### Running your system under Wercker in Dev Mode
 
     $ cd <your project root = location of wercker.yml>
